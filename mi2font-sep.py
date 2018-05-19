@@ -52,7 +52,7 @@ def unpackFont(font_path):
 				if x == 16:
 					x = 0
 					y += 1
-		img.save("bmp" + os.sep + 'U+{:04x}'.format((chars[2*i+1] << 8) + chars[2*i]) + '.bmp') 
+		img.save("bmp" + os.sep + '{:04x}'.format((chars[2*i+1] << 8) + chars[2*i]) + '0.bmp')
 
 # Create a Amazfit Bip file from bmps
 def packFont(font_path, english):
@@ -67,10 +67,10 @@ def packFont(font_path, english):
 	seq_nr = 0
 	startrange = -1
 	
-	bmp_files = sorted(glob.glob('bmp' +  os.sep + 'U+*.bmp'))
+	bmp_files = sorted(glob.glob('bmp' +  os.sep + '*.bmp'))
 	header2 = bytearray(len(bmp_files) * 2);
 	for i in range (0, len(bmp_files)):
-		unicode = int(bmp_files[i][6:-4],16)
+		unicode = int(bmp_files[i][4:-5],16)
 		header2[2*i] = unicode & 0xff
 		header2[2*i+1] = unicode >> 8
 

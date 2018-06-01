@@ -78,15 +78,12 @@ def packFont(font_path, english):
 
 		x = 0
 		y = 0
-		char_width = 0;
 
 		while y < 16:
 			b = 0
 			for j in range(0, 8):
 				if pixels[x, y] != (0, 0, 0):
 					b = b | (1 << (7 - j))
-					if (x > char_width):
-						char_width = x
 				x += 1
 				if x == 16:
 					x = 0

@@ -27,14 +27,14 @@ Usage:
 Mili_pro.ft.cz
 ---------------
 
-Minimal font containing Czech characters
+Minimal font containing Czech characters (English header)
 
 Mili_pro_czsk.ft
 ----------------
 
-Font based on https://www.miuios.cz/fonty-s-cz-sk-diakritikou-23145 - complete version
+Font based on https://www.miuios.cz/fonty-s-cz-sk-diakritikou-23145 - complete version (Chinese header)
 
 Mili_pro_czsk_nosymbol.ft
 --------------------------
 
-Previous font with extra symbols for borders and ASCII-art removed
+Previous font with extra symbols for borders and ASCII-art removed (English header)

@@ -2,7 +2,7 @@
 Miband2 font tool
 ===================
 
-This tool is based on https://github.com/amazfitbip/tools bipfont.py and https://gist.github.com/joserebelo/b9be41b7b88774f712e2f864fdd39878. It uses the font character files generated from the first tool, as thtere are many fonts like that on Internet. Please note, that fonts which are exported from MiBand 2 lack the information encoded in last number of character file name - the offset, so I would adwise against using them the other way. 
+This tool is based on https://github.com/amazfitbip/tools bipfont.py and https://gist.github.com/joserebelo/b9be41b7b88774f712e2f864fdd39878. It uses the font character files generated from the first tool, as there are many fonts like that on Internet. Please note, that fonts which are exported from MiBand 2 lack the information encoded in last number of character file name - the offset, so I would adwise against using them the other way. 
 
 The font may be flashed by GadgetBridge or some other tool which supports custom firmware (font) flashing, but it is not widely tested. 
 

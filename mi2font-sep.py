@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Simple python command line tool to pack / unpack the Amazfit Bip font firmware files
+# Simple python command line tool to pack / unpack the Mifit2 font firmware files
 
-# (C) José Rebelo
+# Based on codes provided
+# by José Rebelo
 # https://gist.github.com/joserebelo/b9be41b7b88774f712e2f864fdd39878
-
-# (E) Yener Durak & Eddie - Make this working with Amazfit Bip
-# https://gist.github.com/joserebelo/b9be41b7b88774f712e2f864fdd39878
-
-# Thanks to https://github.com/prof-membrane for initial analisys
-# https://github.com/Freeyourgadget/Gadgetbridge/issues/734#issuecomment-320108514
+# and
+# https://github.com/amazfitbip/tools/blob/master/bipfont.py
 
 from PIL import Image
 from pathlib import Path
